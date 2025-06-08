@@ -173,7 +173,7 @@ def main():
                 text_rect = text.get_rect(center=((x * TILE_SIZE) + TILE_SIZE // 2, (y * TILE_SIZE) + TILE_SIZE // 2))
                 screen.blit(text, text_rect)
 
-        player.draw(screen)
+        player.draw(screen, numbers, FONT)
         draw_panel(screen, steps, button_rect, best_value, show_delta)
 
         for event in pygame.event.get():
